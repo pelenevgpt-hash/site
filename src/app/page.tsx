@@ -616,7 +616,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false)
   const [isConsentGiven, setIsConsentGiven] = useState(false)
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false)
-  const [peopleCount, setPeopleCount] = useState(1)
+  const [peopleCount, setPeopleCount] = useState<number | string>(1)
   const selectedTourData = selectedTourId ? tours.find(t => t.id === selectedTourId) : null;
 
 
@@ -1213,7 +1213,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Contact Form */}
+          {/* Contact Form */}
             <Card className="shadow-xl">
               <CardHeader>
                 <CardTitle>Оставить заявку</CardTitle>
@@ -1335,7 +1335,10 @@ export default function Home() {
                         min="1"
                         max={selectedTourData?.maxPax || 30}
                         value={peopleCount}
-                        onChange={(e) => setPeopleCount(Math.max(1, Number(e.target.value)))}
+                        onChange={(e) => {
+                            const val = e.target.value;
+                            setPeopleCount(val === '' ? '' : Number(val));
+                        }}
                         disabled={!isConsentGiven}
                         className="w-full px-4 py-2 rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-60"
                       />
@@ -1350,11 +1353,14 @@ export default function Home() {
                   {/* РАСЧЕТ СТОИМОСТИ */}
                   {(() => {
                     if (!selectedTourData) return null;
+                    
+                    const pax = Number(peopleCount);
+                    
+                    if (!peopleCount || pax < 1) return null;
 
                     const base = selectedTourData.basePrice || 0;
                     const museumPerson = selectedTourData.museumCostPerPerson || 0;
                     const museumGroup = selectedTourData.museumCostPerGroup || 0;
-                    const pax = peopleCount;
                     const maxPax = selectedTourData.maxPax || 30;
 
                     const roundToThousands = (num) => Math.round(num / 1000) * 1000;
