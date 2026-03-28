@@ -12,7 +12,7 @@ import {
   MapPin, Clock, Users, Star, Phone, Mail, Instagram, 
   Menu, X, ChevronRight, Building2, TreePine, 
   Camera, Heart, Award, Compass, Send, Globe,
-  Church, Landmark, Palette, Rocket, Castle
+  Church, Landmark, Palette, Rocket, Castle, MessageCircle
 } from 'lucide-react'
 
 // Данные экскурсий
@@ -539,6 +539,114 @@ const tours = [
     image: '/tours/bolevuar_ring.jpg',
     icon: MapPin,
     color: 'from-slate-700 to-slate-900'
+  },
+   {
+    id: 21,
+    title: 'Парк Победы: листая книгу памяти',
+    shortDescription: 'Парк Победы на Поклонной горе можно сравнить с полным собранием сочинений о Великой Отечественной войне, где каждый камень и памятник нашептывает истории истинного патриотизма, мужества и несгибаемой воли.',
+    fullDescription: `Эта экскурсия — отличное решение для семейного досуга, лучший способ рассказать детям любого возраста о том, какой была эта война.
+
+Что вас ждет?
+
+💫 Вдохновляющие истории. Вы узнаете о великих полководцах, о юных героях-партизанах, о том, как жили и ковали победу в тылу обычные люди.
+
+📸 Идеальный кадр. Покажу лучшие точки для фото на фоне знаменитых монументов. Вы увезете с собой не только знания, но и яркие снимки на память.
+
+🔍 Интерактивный формат и викторина. В конце экскурсии выявим самых внимательных слушателей. Все дети получат небольшие памятные призы.
+
+Приходите всей семьей!
+Детям будет интересно узнать историю через игру, а взрослые смогут глубже прочувствовать величие подвига народа. Давайте вместе сохраним память и проведем время с пользой!`,
+    duration: '1,5 часа',
+    price: 'от 1500',
+    basePrice: 6000, // Базовая стоимость услуг гида
+    museumCostPerPerson: 0,         // Стоимость билетов в музей на одного человека
+    museumCostPerGroup: 0,         // Фиксированная стоимость (например, аренда или доп. сбор за группу)
+    groupSize: 'до 15 человек',
+    maxPax: 15, // Макс. количество человек
+    difficulty: '10+',
+    image: '/tours/walking_Park_Pobedy.jpg',
+    icon: MapPin,
+    color: 'from-slate-700 to-slate-900'
+  },
+   {
+    id: 22,
+    title: 'Сердце Москвы: от стен Кремля до Могилы Неизвестного Солдата',
+    shortDescription: 'Величественные стены Кремля помнят и царей, и революции, и парады Победы. Эта экскурсия — кладезь полезной информации о главной площади страны и Александровском саде.',
+    fullDescription: `Что вас ждет?
+
+💫 Тайны Красной площади
+
+Почему площадь называют красной (и вовсе не потому, что красивая!)
+
+Как менялся ее облик на протяжении веков
+
+Какая постройка здесь самая древняя, а какая — самая молодая
+
+Почему Лобное место вовсе не было местом казней
+
+Где находился Монетный двор и каких известных «преступников» прятали в его подземельях
+
+Где на Красной площади когда-то жили экзотические животные
+
+Кто однажды на спортивном самолете приземлился прямо у стен Кремля
+
+Кто такой Василий Блаженный, именем которого мы называем знаменитый собор
+
+🕯 В Александровском саду
+
+Мы склоним голову у Могилы Неизвестного Солдата и обсудим:
+
+Как создавался главный мемориал страны и почему сюда каждый день приходят тысячи людей, чтобы сказать спасибо
+
+Почему реку Неглинную спрятали под землю и где сегодня можно увидеть напоминание о ней
+
+Что такое Грот «Руины» и из каких камней он сложен
+
+Где когда-то выращивали лекарственные растения для царской семьи
+
+Удивительную историю обелиска дома Романовых`,
+    duration: '1,5 часа',
+    price: 'от 1500',
+    basePrice: 6000, // Базовая стоимость услуг гида
+    museumCostPerPerson: 0,         // Стоимость билетов в музей на одного человека
+    museumCostPerGroup: 0,         // Фиксированная стоимость (например, аренда или доп. сбор за группу)
+    groupSize: 'до 15 человек',
+    maxPax: 15, // Макс. количество человек
+    difficulty: '10+',
+    image: '/tours/walking_Moscow_Heart.jpg',
+    icon: MapPin,
+    color: 'from-slate-700 to-slate-900'
+  },
+   {
+    id: 23,
+    title: 'Кремлевские башни: стражи, свидетели и хранители тайн',
+    shortDescription: 'Двадцать башен Московского Кремля. Каждая — со своим именем, своим характером и своей историей. Они видели нашествие врагов и пышные царские выходы, помнят звон вечевых колоколов и тишину ночных дозоров. Во время этой экскурсии вы познакомитесь с ними поближе…',
+    fullDescription: `🏛 Имена и судьбы
+Почему Спасская башня стала главными воротами страны и откуда пошла традиция боя курантов
+Откуда такое название — Кутафья и как она связана с мостом
+Почему Троицкую башню несколько раз переименовывали, а Набатную заставили молчать навсегда
+Какая башня самая старая, какая самая молодая, а какая — самая маленькая и незаметная
+
+💫 Тайны и легенды
+Где находилась самая страшная тюрьма Кремля и кто в ней сидел 
+Что скрывают подземные ходы, которые тянутся от башен вглубь Кремля
+Какая башня «плавает» — и почему инженеры до сих пор следят за ее фундаментом 
+
+👑 Звезды и символы
+Когда на кремлевских башнях появились двуглавые орлы и почему их сменили рубиновые звезды
+Почему звезды на башнях разного размера и как они устроены
+Как в годы войны маскировали Кремль`,
+    duration: '1,5 часа',
+    price: 'от 1500',
+    basePrice: 6000, // Базовая стоимость услуг гида
+    museumCostPerPerson: 0,         // Стоимость билетов в музей на одного человека
+    museumCostPerGroup: 0,         // Фиксированная стоимость (например, аренда или доп. сбор за группу)
+    groupSize: 'до 15 человек',
+    maxPax: 15, // Макс. количество человек
+    difficulty: '10+',
+    image: '/tours/walking_Kremlin_Tower.jpg',
+    icon: MapPin,
+    color: 'from-slate-700 to-slate-900'
   }
 ]
 
@@ -614,7 +722,7 @@ export default function Home() {
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null)
   const [selectedTourId, setSelectedTourId] = useState<number | null>(null)
   const [scrolled, setScrolled] = useState(false)
-  const [isConsentGiven, setIsConsentGiven] = useState(false)
+  const [isConsentGiven, setIsConsentGiven] = useState(true)
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false)
   const [peopleCount, setPeopleCount] = useState<number | string>(1)
   const selectedTourData = selectedTourId ? tours.find(t => t.id === selectedTourId) : null;
@@ -788,7 +896,7 @@ export default function Home() {
             <div className="animate-fade-in-up">
               <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium border-primary/20">
                 <Globe className="w-4 h-4 mr-2 text-primary" />
-                Экскурсии на русском, английском и итальянском
+                Экскурсии на русском, <br/> английском и итальянском
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-600 to-accent">
@@ -1139,7 +1247,7 @@ export default function Home() {
                 <a href="https://wa.me/79262132039" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-sm hover:shadow-md transition-shadow cursor-pointer hover:bg-accent/50">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-primary" />
+                      <MessageCircle className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">WhatsApp</div>
@@ -1200,16 +1308,16 @@ export default function Home() {
                 </Button> */}
 
                 <Button variant="outline" size="icon" className="rounded-full" asChild>
-                  <a href="https://t.me/ikrasnogorskaya" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/mosivetta" target="_blank" rel="noopener noreferrer">
                     <Send className="w-5 h-5" />
                   </a>
                 </Button>
 
-                <Button variant="outline" size="icon" className="rounded-full" asChild>
+                {/* <Button variant="outline" size="icon" className="rounded-full" asChild>
                   <a href="https://wa.me/79262132039" target="_blank" rel="noopener noreferrer">
-                    <Phone className="w-5 h-5" />
+                    <MessageCircle className="w-5 h-5" />
                   </a>
-                </Button>
+                </Button> */}
               </div>
             </div>
 
