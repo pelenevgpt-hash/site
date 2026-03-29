@@ -40,7 +40,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Экскурсии по Москве с гидом Иветтой',
     description: 'Более 20 уникальных маршрутов по исторической Москве.',
-    images: ['/hero-map.jpeg'],
+    images: ['/hero-logo.jpeg'],
+  },
+  icons: {
+    icon: '/logo.jpg',
   },
 };
 
