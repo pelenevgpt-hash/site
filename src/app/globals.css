@@ -5,50 +5,29 @@
 @layer base {
   :root {
     --radius: 0.625rem;
-    /* Тёплый кремовый фон с оттенком старой бумаги */
     --background: oklch(0.98 0.012 75);
     --foreground: oklch(0.25 0.03 50);
-    
-    /* Карточки - тёплый слоновая кость */
     --card: oklch(0.99 0.01 80);
     --card-foreground: oklch(0.25 0.03 50);
-    
     --popover: oklch(0.99 0.01 80);
     --popover-foreground: oklch(0.25 0.03 50);
-    
-    /* Основной акцент - тёплый терракотовый с золотистым отливом */
     --primary: oklch(0.55 0.12 35);
     --primary-foreground: oklch(0.98 0.01 80);
-    
-    /* Вторичный - приглушённый песочный */
     --secondary: oklch(0.92 0.03 70);
     --secondary-foreground: oklch(0.35 0.04 45);
-    
-    /* Приглушённый - тёплый серый */
     --muted: oklch(0.94 0.015 70);
     --muted-foreground: oklch(0.50 0.03 55);
-    
-    /* Акцент - глубокий винный для таинственности */
     --accent: oklch(0.45 0.10 25);
     --accent-foreground: oklch(0.95 0.02 75);
-    
     --destructive: oklch(0.55 0.20 25);
-    
-    /* Границы - тёплые коричневатые */
     --border: oklch(0.88 0.03 65);
     --input: oklch(0.88 0.03 65);
-    
-    /* Кольцо фокуса - золотистое */
     --ring: oklch(0.65 0.12 55);
-    
-    /* Графики - тёплая палитра */
     --chart-1: oklch(0.55 0.12 35);
     --chart-2: oklch(0.50 0.10 25);
     --chart-3: oklch(0.60 0.10 50);
     --chart-4: oklch(0.55 0.08 40);
     --chart-5: oklch(0.45 0.12 20);
-    
-    /* Сайдбар */
     --sidebar: oklch(0.97 0.015 70);
     --sidebar-foreground: oklch(0.25 0.03 50);
     --sidebar-primary: oklch(0.55 0.12 35);
@@ -60,50 +39,29 @@
   }
 
   .dark {
-    /* Тёмный фон - глубокий коричнево-серый как старый камень */
     --background: oklch(0.18 0.02 50);
     --foreground: oklch(0.92 0.02 70);
-    
-    /* Карточки - тёплый тёмный */
     --card: oklch(0.22 0.025 45);
     --card-foreground: oklch(0.92 0.02 70);
-    
     --popover: oklch(0.22 0.025 45);
     --popover-foreground: oklch(0.92 0.02 70);
-    
-    /* Основной акцент - светлая терракота */
     --primary: oklch(0.70 0.12 40);
     --primary-foreground: oklch(0.18 0.02 50);
-    
-    /* Вторичный */
     --secondary: oklch(0.28 0.03 45);
     --secondary-foreground: oklch(0.88 0.02 70);
-    
-    /* Приглушённый */
     --muted: oklch(0.26 0.02 50);
     --muted-foreground: oklch(0.65 0.03 60);
-    
-    /* Акцент - таинственный винный */
     --accent: oklch(0.55 0.12 25);
     --accent-foreground: oklch(0.92 0.02 70);
-    
     --destructive: oklch(0.65 0.18 25);
-    
-    /* Границы */
     --border: oklch(0.32 0.025 45);
     --input: oklch(0.32 0.025 45);
-    
-    /* Кольцо */
     --ring: oklch(0.70 0.12 50);
-    
-    /* Графики */
     --chart-1: oklch(0.70 0.12 40);
     --chart-2: oklch(0.60 0.10 25);
     --chart-3: oklch(0.65 0.10 55);
     --chart-4: oklch(0.60 0.08 45);
     --chart-5: oklch(0.55 0.12 30);
-    
-    /* Сайдбар */
     --sidebar: oklch(0.20 0.02 48);
     --sidebar-foreground: oklch(0.92 0.02 70);
     --sidebar-primary: oklch(0.70 0.12 40);
@@ -115,11 +73,12 @@
   }
 
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
   
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
   }
   
   html {
@@ -144,7 +103,6 @@
   }
 }
 
-/* Остальные ваши анимации можно добавить сюда аналогично */
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
