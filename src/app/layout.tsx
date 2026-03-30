@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.mosivetta.ru'),
+  metadataBase: new URL('https://www.mosivetta.ru'), // <--- Запятая здесь ОБЯЗАТЕЛЬНА
   title: 'Экскурсии по Москве с гидом Иветтой | ВДНХ, Музей Космонавтики, Пешие туры',
   description: 'Аккредитованный гид Иветта Красногорская. Индивидуальные и групповые экскурсии по Москве: ВДНХ, Центр Космонавтики, Новая Третьяковка. Русский, английский, итальянский языки. Бронируйте онлайн!',
   keywords: [
