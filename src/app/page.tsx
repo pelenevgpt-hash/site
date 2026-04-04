@@ -821,13 +821,13 @@ export default function Home() {
                   {item.label}
                 </button>
               ))}
-              <Link 
+              {/* <Link 
                 href="/en-tours"
                 className="px-4 py-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-all font-medium flex items-center gap-2"
               >
                 <Globe className="w-4 h-4" />
                 Экскурсии на других языках
-              </Link>
+              </Link> */}
             </nav>
 
             {/* CTA Button */}
