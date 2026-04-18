@@ -179,3 +179,8 @@
 .dark .glass {
   background: rgba(35, 30, 25, 0.85);
 }
+
+/* Склейка email */
+.email-domain::after {
+  content: "@yandex.ru";
+}

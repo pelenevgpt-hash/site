@@ -1653,7 +1653,9 @@ export default function Home() {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  +7 926 213 20 39
+                  <span>+7 926</span>
+                  <span> 213</span>
+                  <span> 20 39</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
